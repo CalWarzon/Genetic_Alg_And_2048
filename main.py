@@ -21,7 +21,7 @@ from pathlib import Path
 nets = [None, None, None, None]
 name = ['logSmall', 'logBig', 'DiscreteSmall', 'DiscreteBig']
 for i in range(4):
-  nets[i] = IE.importObject(folder.iterdir()[i])
+  nets[i] = IE.importObject(name[i])
 #size = [1, 5, 10, 20, 30, 50]
 colors = ['red', 'blue', 'green', 'orange']
 #for i in zip(nets, name):
